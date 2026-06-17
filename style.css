@@ -1,0 +1,322 @@
+@import url(https://db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended+Bold);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.img img {
+    height: 470px;
+    width: 320px;
+    position: relative;
+    z-index: 99;
+    object-fit: cover;
+}
+
+#scroll-div {
+    width: 100%;
+    top: 24%;
+    position: absolute;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll-div h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Monument Extended Bold';
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll-div2 {
+    width: 100%;
+    top: 42%;
+    position: absolute;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 100;
+}
+
+#scroll-div2::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll-div2 h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin-right: 15px;
+    color: transparent;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 400;
+    font-family: 'Monument Extended Bold';
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #00000098;
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroll-div3 {
+    width: 100%;
+    top: 60%;
+    position: absolute;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#scroll-div3::-webkit-scrollbar {
+    display: none;
+}
+
+#scroll-div3 h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Monument Extended Bold';
+    animation-name: scroll;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+}
+
+#text {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Monument Extended Bold';
+    width: 48%;
+    text-align: center;
+    z-index: 999;
+    bottom: 80%;
+    left: 26%;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(-100% - 17px));
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#texts {
+    width: max-content;
+    position: absolute;
+    bottom: 78%;
+    text-transform: uppercase;
+    left: 2%;
+}
+
+#texts svg {
+    width: 20px;
+    color: red;
+}
+
+#texts h2 {
+    font-family: monospace;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+#texts h2:nth-child(2) {
+    color: red;
+}
+
+#texts h2:last-child {
+    color: green;
+}
+
+#texts h2:nth-child(3) {
+    color: orange;
+}
+
+#texts h2:nth-child(4) {
+    color: blue;
+}
+
+#desc h2 {
+    position: absolute;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+    width: 25%;
+    text-align: start;
+    text-transform: uppercase;
+    top: 76%;
+    line-height: 12px;
+    left: 2%;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    top: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 27px;
+}
+
+#footer h3 {
+    font-size: 12px;
+    font-family: monospace;
+    color: #000;
+}
+
+#footer h4 {
+    font-size: 12px;
+    font-family: monospace;
+    color: #000;
+    text-decoration: underline;
+}
+
+#nav {
+    width: 100%;
+    position: absolute;
+    bottom: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 27px;
+}
+
+#nav h3 {
+    font-family: monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+#nav h2 {
+    font-family: verdana;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: orangered;
+    margin-right: 140px;
+}
+
+.menu svg {
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: 5%;
+
+}
+
+@media (max-width:600px) {
+    #nav {
+        bottom: 96%;
+        padding: 5px 38px;
+    }
+
+    #nav h3 {
+        font-size: 6px;
+    }
+
+    #nav h2 {
+        font-family: verdana;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: orangered;
+        margin-right: 25px;
+    }
+
+    .menu h3 {
+        display: none;
+    }
+
+    .menu svg {
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 5%;
+        top: 1%;
+    }
+
+    #text {
+        font-size: 13px;
+        width: 74%;
+        bottom: 82%;
+        left: 15%;
+    }
+
+    .img img {
+        height: 455px;
+        width: 292px;
+        margin-left: 5vw;
+    }
+
+    #scroll-div {
+        top: 30%;
+    }
+
+    #scroll-div2 {
+        top: 45%;
+    }
+
+    #scroll-div3 {
+        top: 60%;
+    }
+
+    #texts {
+        bottom: 89%;
+        left: 11%;
+    }
+
+    #texts svg {
+        width: 14px;
+    }
+
+    #texts h2 {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    #desc h2 {
+        font-size: 9px;
+        width: 48%;
+        top: 82%;
+        line-height: 11px;
+        left: 10%;
+    }
+
+    #footer {
+        display: none;
+    }
+}
