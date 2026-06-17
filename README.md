@@ -2,7 +2,7 @@
 
 A single-page landing page concept for a content creation agency, built using **pure HTML and CSS** — no JavaScript, no animation libraries. The main feature is an infinite, multi-layered horizontal marquee effect created entirely with CSS keyframes.
 
-🔗 **Live Demo:** [add your GitHub Pages link here]
+🔗 **Live Demo:** https://khadija-faisal1.github.io/animated-landing-page/
 
 ---
 
